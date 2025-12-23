@@ -7,8 +7,8 @@ if [[ "$1" == "-f" || "$1" == "--force" ]]; then
   FORCE=true
 fi
 
-for src in *_light_macos_1024w.png; do
-  base="${src%_light_macos_1024w.png}"
+for src in *_favicon.png; do
+  base="${src%_favicon.png}"
   out="${base}_favicon.ico"
 
   if [[ -f "$out" && "$FORCE" == false ]]; then
